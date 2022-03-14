@@ -14,7 +14,7 @@ int main(void)
 
 	for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
         {
-		if (aphabet == 'q')
+		if (alphabet == 'q')
 			continue;
 	       else if (alphabet == 'e')
 		       continue;
