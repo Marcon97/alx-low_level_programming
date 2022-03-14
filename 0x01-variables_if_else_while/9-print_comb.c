@@ -16,7 +16,7 @@ int main(void)
 	{
 		putchar (number);
 
-	if (number == 97)
+	if (number == 57)
 	{
 		break;
 	}
@@ -24,7 +24,7 @@ int main(void)
 		putchar(' ');
 	}
 
-                putchar('\n');
+		putchar('\n');
 
-        return (0);
+	return (0);
 }
