@@ -1,1 +1,1 @@
-THI IS PUTCHAR 
+my putchar readme
