@@ -1,26 +1,28 @@
 #include "main.h"
 /**
- * rot13 - encrypts code
- * @s: string to encrypt
- * Return: char value
+ * rot13 - encodes a string into 1337
+ * @s: String
+ * Return: string that is encoded
  */
 char *rot13(char *s)
 {
 	int i;
-	int j;
-	char encode1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char encode2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
-	for (i = 0; s[i] != '\0'; i++)
+	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *ptr = s;
+
+	while (*s)
 	{
-		for (j = 0; encode1[j]; j++)
+		for (i = 0; i <= 52; i++)
 		{
-			if (s[i] == encode1[j])
+			if (*s == rot13[i])
 			{
-				s[i] = encode2[j];
+				*s = ROT13[i];
 				break;
 			}
 		}
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
