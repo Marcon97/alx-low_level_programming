@@ -1,13 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - Entry Point
- * @argc : argument counter
- * @argv : pointer to array
- * Return:integer
+ * main - function
+ * @argc: offset count
+ * @argv: offset value
+ * Return: 0
  */
+
+
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[argc - 1]);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
