@@ -1,0 +1,1 @@
+create staatic lib
