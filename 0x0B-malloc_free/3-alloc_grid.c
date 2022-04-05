@@ -41,7 +41,3 @@ int **alloc_grid(int width, int height)
 
 	return (gridout);
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-
